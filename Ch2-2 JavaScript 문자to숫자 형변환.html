@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript">
+	// 자동변환
+	console.log("50"*"5");  // 250
+	console.log(+"50");     // 50
+	console.log(+" 50 ");   // 50, 숫자 앞과 뒤의 공백은 무시됨
+	console.log("50"-0);    // 50
+	console.log(+"50abc");  // NaN, 숫자로 변환할 수 없음
+
+	// Number() 생성자 이용 변환
+	console.log(Number("50"));      // 50
+	console.log(Number("50.55"));   // 50.55
+	console.log(Number(" 50 "));    // 50
+	console.log(Number(" 50abc"));  // NaN
+	console.log(Number("abc50"));   // NaN
+	console.log(Number("0x50"));    // 80, 16진수
+	console.log(Number("0xff"));    // 255, 16진수
+
+	
+	// parseInt(), parseFloat() 함수 이용 변환
+	console.log(parseInt("50 meters")); // 50
+	console.log(parseInt("50.55"));     // 50
+	console.log(parseInt(" 50 "));      // 50
+	console.log(parseInt(" 50abc"));    // 50
+	console.log(parseInt("abc50"));     // NaN
+	console.log(parseInt("0x50"));      // 80, 16진수
+	console.log(parseInt("0xff"));      // 255, 16진수
+	console.log(parseInt("010"));       // 8이나 10, 브라우저에 따라 다름
+	console.log(parseFloat(" 50.55 meters"));   // 50.55
+	console.log(parseFloat("$50.55 dollars"));  // NaN
+	
+</script>
+
+</body>
+</html>
+
+

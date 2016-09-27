@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var boolean1 = true;            
+	var boolean2 = false;   
+	console.log(0 + boolean1);  // 1
+	console.log(0 + boolean2);  // 0
+</script>
+
+<script type="text/javascript">
+	var boolean1 = true;            
+	var boolean2 = false;   
+	console.log("" + boolean1); // "true"
+	console.log("" + boolean2); // "false"
+</script>
+
+<script type="text/javascript">
+	var number1 = 1;            
+	var number2 = -1;
+	var number3 = 0;
+	var number4 = NaN;
+	console.log(!!number1);     // true
+	console.log(!!number2);     // true
+	console.log(!!number3);     // false
+	console.log(!!number4);     // false
+</script>
+
+<script type="text/javascript">
+	var string1 = "abc";            
+	var string2 = "false";          
+	var string3 = "";           
+	console.log(!!string1);     // true
+	console.log(!!string2);     // true
+	console.log(!!string3);     // false
+</script>
+
+<script type="text/javascript">
+	var var1 = null;
+	var var2 = undefined;
+	var var3 = [];      // 빈 배열
+	var var4 = {};      // 빈 객체
+	console.log(!!var1);    // false
+	console.log(!!var2);    // false
+	console.log(!!var3);    // true
+	console.log(!!var4);    // true
+</script>
+
+</body>
+</html>
+
+

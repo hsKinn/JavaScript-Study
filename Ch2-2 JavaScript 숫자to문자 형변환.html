@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript">
+	// 자동변환
+	var str1 = 50 + " meters";  // 50 meters
+	var str2 = 50 + "";
+
+	// String() 함수 이용 변환
+	var number1 = 50;
+	var string1 = String(number1);
+	console.log(number1.length);    // undefined
+	console.log(string1.length);    // 2
+	
+	// toString() 함수 이용 변환
+	var number1 = 500;
+	var string1 = number1.toString();
+	console.log(number1.length);    // undefined
+	console.log(string1.length);    // 3
+	
+	// toFixed(), toExponetial(), toPrecision()
+	var n = 123456.789;
+	console.log(n.toFixed(0));      //123457
+	console.log(n.toFixed(2));      //123456.79
+	console.log(n.toExponential(1));//1.2e+5
+	console.log(n.toExponential(3));//1.235e+5
+	console.log(n.toPrecision(4));  //1.235e+5
+	console.log(n.toPrecision(6));  //123457
+	console.log(n.toPrecision(7));  //123456.8
+</script>
+
+</body>
+</html>
+
+
