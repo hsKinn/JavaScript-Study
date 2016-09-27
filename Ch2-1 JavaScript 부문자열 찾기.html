@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var str = "Hello World!";
+	console.log(str.indexOf("Hello"));  // 0
+	console.log(str.indexOf("World"));  // 6
+	console.log(str.indexOf("Hi"));     // -1, 찾을 수 없음
+	console.log(str.indexOf("Hello", 1));// -1, 인덱스 1에서부터 찾기 시작
+</script>
+
+<script type="text/javascript">
+	var str = "Hello World! Hello again.";
+	console.log(str.lastIndexOf("Hello"));  // 13
+	console.log(str.lastIndexOf("World"));  // 6
+	console.log(str.lastIndexOf("Hi"));     // -1, 찾을 수 없음
+</script>
+
+</body>
+</html>
+
+
