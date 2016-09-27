@@ -6,13 +6,20 @@
 <body>
  
 <script type="text/javascript">
-	var str1 = "hello\n";       // 개행 이스케이프는 한 문자에 해당
-	var str2 = "\\\\\\"         // 세 개의 백슬래시
-	var str3 = "\u00A9\u00A9";  // 두 개의 유니코드 문자
-	console.log(str1.length);   // 6
-	console.log(str2.length);   // 3
-	console.log(str3.length);   // 2
+    var str1 = "first line \n second line \n third line";   // 개행
+    var str2 = "\f";            // 폼 피드
+    var str3 = "\r";            // 캐리지 리턴
+    var str4 = "\t";            // 탭
+    var str5 = "\v";            // 수직 탭
+    var str6 = "\'";            // 작은따옴표
+    var str7 = "\"";            // 큰따옴표
+    var str8 = "c:\\temp";      // 백슬래시 문자(\)
+    var str9 = "\b";            // 백스페이스
+    // 유니코드 문자는 4자리 16진수값으로 지정한다. 
+    // 예를 들어, \u00A9는 저작권 기호를 나타내는 유니코드 문자다.
+    var str10 = "\u00A9";
 </script>
+
 
 </body>
 </html>
