@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function User(name){
+		this.name = name;
+		this.id = 123;
+		this.sayHello = function(){
+			console.log("Hello, I am " + name);
+		};
+	};
+	 
+	var user1 = new User("Tom");    
+	var user2 = new User("Jerry");  
+	 
+	user1.sayHello();   // Hello, I am Tom
+	user2.sayHello();   // Hello, I am Jerry
+</script>
+
+<script type="text/javascript">
+	function User(name){
+		this.name = name;
+		return {name: "Jerry"};
+	};
+	 
+	var user1 = new User("Tom");    
+	console.log(user1.name);        // Jerry
+</script>
+
+</body>
+</html>
+
+
