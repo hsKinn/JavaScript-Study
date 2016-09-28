@@ -6,22 +6,18 @@
 <body>
 
 <script type="text/javascript">
-	var object1 = new Object();         // 빈 객체 생성
-	object1.name = "itinpractice.com";  // 프로퍼티 추가
-	console.log(object1.name);          // itinpractice.com
-	delete object1.name;                // 프로퍼티 삭제
-	console.log(object1.name);          // undefined
-</script>
-
-<script type="text/javascript">
-	var object1 = new Object();             // 빈 객체 생성
-	object1['name'] = "itinpractice.com";   // 프로퍼티 추가
-	console.log(object1['name']);           // itinpractice.com
-	delete object1['name'];                 // 프로퍼티 삭제
-	console.log(object1['name']);           // undefined
+	console.log(Boolean(1));    // true
+	console.log(Boolean(-1));   // true
+	console.log(Boolean(0));    // false
+	console.log(Boolean(NaN));  // false
+	console.log(Boolean("abc"));    // true
+	console.log(Boolean("false"));  // true
+	console.log(Boolean(""));   // false
+	console.log(Boolean(null)); // false
+	console.log(Boolean(undefined));// false
+	console.log(Boolean([]));   // true
+	console.log(Boolean({}));   // true
 </script>
 
 </body>
 </html>
-
-
