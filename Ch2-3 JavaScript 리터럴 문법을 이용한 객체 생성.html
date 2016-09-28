@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var object1 = {};                       // 빈 객체 생성
+	object1['name'] = "tom";                // 프로퍼티 추가
+	console.log(object1['name']);           // tom
+	delete object1['name'];                 // 프로퍼티 삭제
+	console.log(object1['name']);           // undefined
+</script>
+
+<script type="text/javascript">
+	var user = {
+		name: "tom",
+		id: 123,
+		address: {
+			city: 'San Francisco',
+			street: '101 street'
+		},
+		email: ''
+	};          
+	console.log(user.name);         // tom
+	console.log(user.address.city); // San Francisco
+</script>
+
+</body>
+</html>
+
+
