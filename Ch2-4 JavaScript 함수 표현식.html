@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var sayHello = function(name){
+		console.log("Hello, I am " + name);
+	}
+	sayHello('Tom');        // Hello, I am Tom	
+</script>
+
+<script type="text/javascript">
+	sayHello('Tom');        // TypeError: sayHello is not a function
+	var sayHello = function(name){
+		console.log("Hello, I am " + name);
+	}
+</script>
+</body>
+</html>
+
+
