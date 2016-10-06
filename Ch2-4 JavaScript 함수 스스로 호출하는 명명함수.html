@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	(function sayHello(){
+		console.log(sayHello); //함수의 소스 코드를 출력
+	})();
+	 
+	console.log(sayHello);     //ReferenceError: sayHello is not defined
+</script>
+
+<script type="text/javascript">
+	var result = (function factorial(n){
+		return n == 1? n: n*factorial(n-1)
+	})(6);
+	 
+	console.log(result);    // 720
+</script>
+</body>
+</html>
+
+
