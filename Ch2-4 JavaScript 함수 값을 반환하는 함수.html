@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function multiply(x, y){
+		return x*y;
+	}
+	console.log(multiply(5,5)); // 25
+</script>
+
+<script type="text/javascript">
+	function multiply(x, y){
+		var result = x*y;
+	}
+	console.log(multiply(5,5)); // undefined
+</script>
+
+<script type="text/javascript">
+	function multiply(x, y){
+		var result = x*y;
+		return;
+	}
+	console.log(multiply(5,5)); // undefined
+</script>
+</body>
+</html>
+
+
