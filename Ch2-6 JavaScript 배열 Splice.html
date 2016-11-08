@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var languages = ["Java", "JavaScript", "PHP"];
+	languages.splice(1,1)
+	console.log(languages[1]);      // PHP
+	console.log(languages);         // ["Java", "PHP"]
+</script>
+
+<script type="text/javascript">
+	var languages = ["Java", "JavaScript", "PHP"];
+	console.log(languages.splice(0,2,"c++")); // ["Java", "JavaScript"]
+	console.log(languages[0]);      // c++
+	console.log(languages);         // ["c++", "PHP"]
+</script>
+
+<script type="text/javascript">
+	var languages = ["Java", "JavaScript", "PHP"];
+	languages.splice(0,0,"c++","c"); // insert
+	console.log(languages);     // ["c++", "c", "Java", "JavaScript", "PHP"]
+</script>
+
+<script type="text/javascript">
+	var languages = ["Java", "JavaScript", "PHP"];
+	languages.splice(-1,0,"c++");   // insert at index -1
+	console.log(languages);         // ["Java", "JavaScript", "c++", "PHP"]
+</script>
+
+
+</body>
+</html>
+
+
