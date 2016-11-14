@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var number1 = "111";
+	console.log(number1);       // 111, 전역 객체의 프로퍼티에 접근
+	console.log(this.number1);  // 111, 'this'를 사용해 전역 객체를 참조
+	console.log(window.number1);// 111, 'window'를 사용해 전역 객체를 참조
+</script>
+
+<script type="text/javascript">
+	x = 5;          // 전역 변수
+	y = 5;          // 전역 변수
+	function f(y){      // 인자 'y'는 호출 객체의 프로퍼티로 저장됨
+		var x = 15;     // 지역 변수
+		console.log("local variable x = "+ x);
+		console.log("local variable y = "+ y);
+	} 
+	f(15);
+	console.log("local global x = "+ x);
+	console.log("local global y = "+ y);
+</script>
+
+</body>
+</html>
+
+
