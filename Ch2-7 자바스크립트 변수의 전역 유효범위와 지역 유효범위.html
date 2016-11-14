@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var name = "global";    // 전역 변수를 선언
+	function checkscope(){  
+		var name = "local"; // 지역 변수를 선언
+		console.log(name);  // 전역 변수가 아닌 지역 변수를 사용
+	}
+	checkscope();           // 출력 결과: "local"   
+</script>
+
+<script type="text/javascript">
+	var name = "global";    // 전역 변수를 선언
+	function checkscope(){  
+		name = "local";     // 전역 변수를 변경
+		name2 = "local";    // 암묵적으로 새 전역 변수가 선언됨
+	}
+	checkscope();
+	console.log(name);      // output: "local" 
+	console.log(name2);     // output: "local" 
+</script>
+
+<script type="text/javascript">
+	function changeName(name){          // "name"은 지역 변수다
+		function inner1(){
+			name = name + "-inner1";     
+			function inner2(){
+				name = name + "-inner2";
+			}
+			inner2();
+		}
+		inner1();
+		return name;
+	}
+	console.log(changeName("Hello"));   // Hello-inner1-inner2
+</script>
+
+</body>
+</html>
+
+
