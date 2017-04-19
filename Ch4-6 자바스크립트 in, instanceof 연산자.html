@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Hello World</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var point = {x:5, y:5}
+	console.log('x' in point);          // true
+	console.log('a' in point);          // false
+	console.log('toString' in point);   // true, 프로퍼티에서 상속됨
+</script>
+
+<script type="text/javascript">
+	var d = new Date();
+	console.log(d instanceof Date);     // true
+	var d = [1,2,3,4,5];
+	console.log(d instanceof Array);    // true
+</script>
+
+<script type="text/javascript">
+	var d = new Date();
+	console.log(d instanceof Object);   // true
+	var d = [1,2,3,4,5];
+	console.log(d instanceof Object);   // true
+	console.log({} instanceof Object);  // true
+</script>
+
+<script type="text/javascript">
+	console.log(5 instanceof Object);   // false
+</script>
+
+<script type="text/javascript">
+	console.log(5 instanceof 5);    // TypeError: invalid 'instanceof' operand 5
+</script>
+
+
+</body>
+</html>
+
+
