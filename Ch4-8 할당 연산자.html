@@ -7,45 +7,32 @@
 
 <script type="text/javascript">
 	var x = 10;
-	var y = 15;
-	console.log(x > y ? x-y : y-x);      // 5
+	console.log(x);         // 10
+
+	var x;
+	console.log(x = 10);    // 10
+
+	x = y = z = 10;
+	console.log(x);     // 10
+	console.log(y);     // 10
+	console.log(z);     // 10
 </script>
 
 <script type="text/javascript">
-	var obj = new Object;
-	var date = new Date();
-	var array = new Array;
-</script>
-
-<script type="text/javascript">
-	var obj = {x:1, y:2};       
-	console.log(obj.x);         // 1
-	console.log(delete obj.x);  // true, 프로퍼티 하나를 삭제
-	console.log(obj.x);         // undefined, 프로퍼티가 존재하지 않음
-	console.log(delete obj.x);  // true, 존재하지 않은 프로퍼티를 삭제
-</script>
-
-<script type="text/javascript">
-	var obj1 = {x:1, y:2};      
-	console.log(delete obj1);   // false, 선언된 변수를 삭제할 수 없음
-	obj2 = {x:1, y:2};      
-	console.log(delete obj2);   // true, var 문으로 선언되지 않음
-</script>
-
-<script type="text/javascript">
-	obj1 = {x:1, y:2};      
-	obj2 = obj1;
-	console.log(delete obj1);   // true
-	console.log(obj2.x);        // 1
-	console.log(obj1.x);        // ReferenceError: obj1 is not defined
-</script>
-
-<script type="text/javascript">
-	function multiply(x, y){
-		return x*y;
-	}
-	console.log(multiply(5,5));     // 25
-	console.log(Math.abs(-10));     // 10
+	var x = 10;         
+	console.log (x += 5);   // 15
+	var x = 10;     
+	console.log (x -= 5);   // 5
+	var x = 10;             
+	console.log (x *= 5);   // 50
+	var x = 10;
+	console.log (x /= 5);   // 2
+	var x = 10;
+	console.log (x %= 5);   // 0
+	var x = 10;
+	console.log (x += '5'); // 105, 문자열 연결
+	var x = 10;
+	console.log (x -= '5'); // 5, 숫자 뺄셈
 </script>
 
 </body>
